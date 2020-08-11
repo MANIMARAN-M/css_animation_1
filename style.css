@@ -1,0 +1,113 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.card{
+    position: absolute;
+    width: 100%;
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #000;
+}
+.card img{
+    z-index: 1;
+    width: 450px;
+}
+.right-box{
+    z-index: 0;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 48%;
+    left: 54%;
+    background-color: rgb(255, 0, 43);
+}
+.left-box{
+    z-index: 0;
+    position: absolute;
+    height: 200px;
+    width: 200px;
+    top: 23%;
+    left: 31%;
+    background-color: rgb(255, 0, 43);
+}
+.round{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    top: 10%;
+    left: 10%;
+    border-radius: 50%;
+    border: 2px solid rgb(255, 0, 43);
+    animation: jump 1s ease infinite;
+}.nav-1{
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    top: 10%;
+    left: 80%;
+    border: 2px solid rgb(255, 0, 43);
+    animation: elements 1s ease infinite;
+}
+.nav-2{
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    top: 12%;
+    left: 80%;
+    border: 2px solid rgb(255, 0, 43);
+    animation: elements 1s ease infinite;
+}
+.nav-3{
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    top: 14%;
+    left: 80%;
+    border: 2px solid rgb(255, 0, 43);
+    animation: elements 1s ease infinite;
+}
+.buttom-line{
+    position: absolute;
+    width: 100px;
+    height: 3px;
+    top: 85%;
+    left: 30%;
+    border: 2px solid rgb(255, 0, 43);
+    animation: element 1s ease infinite;
+}
+@keyframes element{
+    0%{
+        transform: rotate(0deg);
+    }
+    50%{
+        transform: rotate(90deg);
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+@keyframes elements{
+    0%{
+        transform: translateX(0px);
+    }
+    50%{
+        transform: translateX(30px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@keyframes jump{
+    0%{
+        transform: translateY(0px);
+    }
+    50%{
+        transform: translateY(30px);
+    }
+    100%{
+        transform: translateY(0px);
+    }
+}
